@@ -2,9 +2,9 @@
 class Skywire < Formula
   desc "Generates C, C++, Swift, Go and more for fixed-layout binary messages"
   homepage "https://github.com/gatkinso/skywire"
-  url "https://github.com/gatkinso/skywire/releases/download/v0.10.0/skywire-0.10.0-macos-arm64.tar.gz"
-  version "0.10.0"
-  sha256 "24befc34fe62d78878a41f5d7851b94aac90a728fc93b9abbe6e08f24f3b6be7"
+  url "https://github.com/gatkinso/skywire/releases/download/v0.11.0/skywire-0.11.0-macos-arm64.tar.gz"
+  version "0.11.0"
+  sha256 "2eb2224f4af74300589492f2660cc043a42861edb38b1f55a4c963eb2f981f63"
   license "Apache-2.0"
 
   depends_on arch: :arm64
@@ -24,8 +24,8 @@ class Skywire < Formula
       {
         "stringValues": { "classname": "Point" },
         "members": {
-          "1": { "type": "uint16_t", "name": "x", "endian": 0 },
-          "2": { "type": "uint16_t", "name": "y", "endian": 1 }
+          "1": { "type": "uint16_t", "name": "x", "endian": 1 },
+          "2": { "type": "uint16_t", "name": "y", "endian": 0 }
         }
       }
     JSON
